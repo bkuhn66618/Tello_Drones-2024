@@ -46,7 +46,8 @@ recvThread.start()
 
 print("\nBrian Kuhn")
 print("Program Name: Square")
-print("Date: 2.6.2024 ")
+print("Date: 2.6.2024")
+print("Drone Wifi = E6AB")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
@@ -59,9 +60,9 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
-
+        sendmsg('up 50',6)
+        sendmsg('forward 100', 6)
+        sendmsg('cw 360')
         sendmsg('land')
 
         print('\nGreat Flight!!!')
