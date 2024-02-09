@@ -59,10 +59,21 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
+        sendmsg('up 50')
+        #Square Pilot = Brian Kuhn - CoPilot = Mya Reynolds
+        
+        for i in range(4):
+            sendmsg('forward 50', 6)
+            sendmsg('cw 90', 6)
 
-        sendmsg('up 50',6)
-        sendmsg('forward 100', 6)
-        sendmsg('cw 360')
+        #Triangle Pilot = Mya Reynolds - Copilot = Brian Kuhn
+
+
+
+        #Circle - Pilot = Brian Kuhn - CoPilot = Mya Reynolds
+
+
+
         sendmsg('land')
 
         print('\nGreat Flight!!!')
