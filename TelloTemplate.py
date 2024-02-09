@@ -61,14 +61,16 @@ try:
         sendmsg('takeoff')
         sendmsg('up 50')
         #Square Pilot = Brian Kuhn - CoPilot = Mya Reynolds
-        
+        """
         for i in range(4):
             sendmsg('forward 50', 6)
             sendmsg('cw 90', 6)
-
+        """
         #Triangle Pilot = Mya Reynolds - Copilot = Brian Kuhn
 
-
+        for i in range(3):
+            sendmsg('forward 50', 6)
+            sendmsg('cw 120', 6)
 
         #Circle - Pilot = Brian Kuhn - CoPilot = Mya Reynolds
 
