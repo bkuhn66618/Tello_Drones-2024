@@ -65,7 +65,7 @@ try:
         sendmsg('ccw 3')
         sendmsg('forward 225')
 
-
+        sendmsg('go 225 0 75 50')
         sendmsg('land')
 
         print('\nGreat Flight!!!')
