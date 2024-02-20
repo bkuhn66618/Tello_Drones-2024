@@ -66,10 +66,14 @@ try:
         # sendmsg('up 55')
         # sendmsg('left 50')
         sendmsg('forward 225')
+
         # Pilot = Brian Kuhn - CoPilot = Mya Reynolds
-        sendmsg('go 225 0 75 50')
+        sendmsg('go 225 0 75 50', 10)
 
         # Pilot = Mya Reynolds - CoPilot - Brian Kuhn
+        sendmsg('curve 125 125 0 0 250 0 50', 12)
+        sendmsg('cw 180')
+        sendmsg('forward 40')
 
         #Pilot = Mya Reynolds - CoPilot - Brian Kuhn
 
@@ -81,6 +85,5 @@ try:
         print('\nMake sure you check WIFI, surroundings, co-pilot is ready, re-run program\n')
 except KeyboardInterrupt:
     sendmsg('emergency')
-
 breakr = True
 sock.close()
