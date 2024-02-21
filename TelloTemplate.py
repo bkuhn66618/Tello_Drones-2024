@@ -80,6 +80,14 @@ try:
         sendmsg('go 225 0 -75 50', 10)
         sendmsg('forward 30')
 
+        #Pilot = Brian Kuhn - CoPilot = (PERSONAL PROJECT NOT NECESSARY)
+        sendmsg('go 225 0 85 50', 10)
+        #curve
+        sendmsg('curve 125 -115 0 0 -230 0 50', 12)
+        sendmsg('forward 20')
+        sendmsg('go 225 0 -85 50', 10)
+        sendmsg('forward 20')
+
         sendmsg('land')
         print('\nGreat Flight!!!')
 
