@@ -84,7 +84,7 @@ try:
         sendmsg('forward 75')
         sendmsg('go 215 0 85 50', 10)
         #curve
-        sendmsg('curve 125 -115 -5 0 -230 -10 50', 12)
+        sendmsg('curve 125 -125 -5 0 -250 -10 50', 12)
         sendmsg('forward 20')
         sendmsg('go 225 0 -75 50', 10)
         sendmsg('forward 20')
