@@ -63,7 +63,7 @@ try:
 
         # Pilot = Brian Kuhn - CoPilot = Mya Reynolds
         sendmsg('ccw 3')
-        # sendmsg('up 55')
+        sendmsg('up 20')
         # sendmsg('left 50')
         sendmsg('forward 225')
 
