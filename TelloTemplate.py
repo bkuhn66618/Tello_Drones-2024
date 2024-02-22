@@ -58,8 +58,8 @@ try:
 
 
         sendmsg('command', 0)
+        sendmsg('battery?', 10)
         sendmsg('takeoff')
-        sendmsg('battery?')
 
         # Pilot = Brian Kuhn - CoPilot = Mya Reynolds
         sendmsg('ccw 3')
@@ -84,7 +84,7 @@ try:
         sendmsg('forward 75')
         sendmsg('go 215 0 85 50', 10)
         #curve
-        sendmsg('curve 125 -125 -5 0 -250 -10 50', 12)
+        sendmsg('curve 125 -135 -5 0 -270 -10 75', 12)
         sendmsg('forward 20')
         sendmsg('go 225 0 -75 50', 10)
         sendmsg('forward 20')
