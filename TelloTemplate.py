@@ -77,12 +77,10 @@ try:
 
         #Pilot = Mya Reynolds - CoPilot - Brian Kuhn
 
-        sendmsg('go 225 0 -75 50', 10)
-        sendmsg('forward 30')
+        sendmsg('go 400 0 -100 50', 10)
 
         #Pilot = Brian Kuhn - CoPilot = (PERSONAL PROJECT NOT NECESSARY)
-        sendmsg('forward 75')
-        sendmsg('go 215 0 85 50', 10)
+        sendmsg('go 215 0 85 100', 10)
         #curve
         sendmsg('curve 125 -135 -5 0 -270 -10 75', 12)
         sendmsg('forward 20')
